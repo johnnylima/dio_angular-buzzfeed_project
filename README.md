@@ -1,5 +1,7 @@
 # DioAngularBuzzfeedProject
 
+Veja o projeto online https://johnnylima.github.io/dio_angular-buzzfeed_project/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
 ## Development server
