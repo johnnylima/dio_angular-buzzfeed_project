@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    /* Color Theme Swatches in RGBA */
+    --boombox-1: rgba(124, 66, 140, 1);
+    --boombox-2: rgba(138, 75, 166, 1);
+    --boombox-3: rgba(45, 51, 64, 1);
+    --boombox-4: rgba(242, 135, 5, 1);
+    --boombox-5: rgba(217, 108, 108, 1);
+    /* Color Theme Swatches in RGBA */
+    --bb-1: rgba(253, 106, 164, 1);
+    --bb-2: rgba(227, 95, 213, 1);
+    --bb-3: rgba(221, 117, 250, 1);
+    --bb-4: rgba(163, 95, 227, 1);
+    --bb-5: rgba(141, 106, 253, 1);
+}
+
+body {
+    background-color: var(--boombox-3);
+}
