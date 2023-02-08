@@ -10,37 +10,20 @@
 
     <!-- Highlight Card -->
     <div class="card highlight-card card-small">
-        <span><h3> Você seria um herói ou vilão?</h3></span>
+        <span><h3>{{quizTitle}}</h3></span>
     </div>
 
     <!-- Quiz -->
-    <div class="pergunta">
-        <p>Here are some links to help you get started?</p>
+    <div *ngIf="!fim" class="pergunta">
+        <p>{{questaoSelecionada.question}}</p>
     </div>
 
-    <!-- <h1 class="resposta">Quiz</h1> -->
+    <h1 *ngIf="fim" class="resposta">{{respostaSelecionada}}</h1>
 
-    <div class="card-container">
-        <a class="card" target="_blank" rel="noopener" href="https://angular.io/tutorial">
-            <span>Learn Angular</span>
-        </a>
-
-        <a class="card" target="_blank" rel="noopener" href="https://angular.io/cli">
-            <span>CLI Documentation</span>
-        </a>
-
-        <a class="card" target="_blank" rel="noopener" href="https://material.angular.io">
-            <span>Angular Material</span>
-        </a>
-
-        <a class="card" target="_blank" rel="noopener" href="https://blog.angular.io/">
-            <span>Angular Blog</span>
-        </a>
-
-        <a class="card" target="_blank" rel="noopener" href="https://angular.io/devtools/">
-            <span>Angular DevTools</span>
-        </a>
-
+    <div class="card-container" *ngIf="!fim">
+        <button class="card" *ngFor="let option of questaoSelecionada.options; index as i " (click)="escolha(option.alias)">
+            <span class="optionId">{{option.id}}</span><span>{{option.name}}</span>
+        </button>
     </div>
 
 </div>

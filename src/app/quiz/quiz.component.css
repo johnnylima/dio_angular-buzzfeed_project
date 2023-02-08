@@ -130,14 +130,25 @@ p {
     position: relative;
 }
 
+.optionId {
+    font-size: 40px;
+    color: #2c2c2c2c;
+    font-weight: 600;
+    padding-right: 15px;
+}
+
 a,
 a:visited,
-a:hover {
+a:hover,
+button,
+button:visited,
+button:hover {
     color: var(--boombox-3);
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+button:hover {
     color: var(--boombox-3);
 }
 
